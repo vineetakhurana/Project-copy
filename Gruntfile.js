@@ -72,28 +72,40 @@ module.exports = function(grunt) {
                     'www/js/site.js',
                 ],
                 options: {
-                    'vendor':'http://ajax.aspnetcdn.com/ajax/knockout/knockout-2.1.0.js',
-                    'specs': 'www/js/test-spec.js'
+                    'vendor':['http://ajax.aspnetcdn.com/ajax/knockout/knockout-2.1.0.js','node-modules/jasmine-check/jasmine-check.js'],
+                    'specs': 'www/js/test-spec.js',
+                    //'template': require('grunt-template-jasmine-requirejs')
                 }
             },
 
                     istanbul: {
-    src: '<%= jasmine.all.src %>',
-    options: {
-        vendor: '<%= jasmine.all.options.vendor %>',
-        specs: '<%= jasmine.all.options.specs %>',
-        template: require('grunt-template-jasmine-istanbul'),
-        templateOptions: {
-            coverage: 'coverage/json/coverage.json',
-            report: [
-                {type: 'html', options: {dir: 'coverage/html'}},
-                {type: 'cobertura', options: {dir: 'coverage/cobertura'}},
-                {type: 'text-summary'}
-            ]
-        }
-    }
-}
-        }
+                      src: '<%= jasmine.all.src %>',
+                      options: {
+                        vendor: '<%= jasmine.all.options.vendor %>',
+                        specs: '<%= jasmine.all.options.specs %>',
+                        template: require('grunt-template-jasmine-istanbul'),
+                        templateOptions: {
+                              coverage: 'coverage/json/coverage.json',
+                              report: [
+                                {type: 'html', options: {dir: 'coverage/html'}},
+                                {type: 'cobertura', options: {dir: 'coverage/cobertura'}},
+                                {type: 'text-summary'}
+                        ]
+                    }
+                 }
+            }
+        },
+
+//         requirejs: {
+//   compile: {
+//     options: {
+//       baseUrl: "www/js/test-spec.js",
+//       mainConfigFile: "node_modules/jasmine-check/jasmine-check.js",
+//       name: "www/js", // assumes a production build using almond 
+//       out: "www/js/optimized.js"
+//     }
+//   }
+// }
 
 
   });
@@ -103,5 +115,6 @@ module.exports = function(grunt) {
   // This will automatically load any grunt plugin you install, such as grunt-contrib-less.
   require('load-grunt-tasks')(grunt);
   grunt.loadNpmTasks('grunt-contrib-jasmine');
+  grunt.loadNpmTasks('grunt-contrib-requirejs');
 
 };
