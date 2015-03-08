@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<checkstyle version="4.3">
+	<file name="www\js\site.js">
+		<error line="47" column="46" severity="warning" message="Missing semicolon." source="jshint.W033" />
+	</file>
+</checkstyle>

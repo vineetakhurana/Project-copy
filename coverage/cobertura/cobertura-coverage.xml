@@ -1,0 +1,55 @@
+<?xml version="1.0" ?>
+<!DOCTYPE coverage SYSTEM "http://cobertura.sourceforge.net/xml/coverage-04.dtd">
+<coverage lines-valid="24"  lines-covered="24"  line-rate="1"  branches-valid="12"  branches-covered="12"  branch-rate="1"  timestamp="1425834936967" complexity="0" version="0.1">
+<sources>
+	<source>c:\Users\khurana\Desktop\Project-copy\MiniProject1-vkhuran2</source>
+</sources>
+<packages>
+	<package name="js"  line-rate="1"  branch-rate="1" >
+	<classes>
+		<class name="site.js"  filename="www\js\site.js"  line-rate="1"  branch-rate="1" >
+		<methods>
+			<method name="SiteSettingsViewModel"  hits="22"  signature="()V" >
+				<lines><line number="2"  hits="22" /></lines>
+			</method>
+			<method name="(anonymous_2)"  hits="26"  signature="()V" >
+				<lines><line number="9"  hits="26" /></lines>
+			</method>
+			<method name="(anonymous_3)"  hits="27"  signature="()V" >
+				<lines><line number="22"  hits="27" /></lines>
+			</method>
+			<method name="(anonymous_4)"  hits="31"  signature="()V" >
+				<lines><line number="35"  hits="31" /></lines>
+			</method>
+		</methods>
+		<lines>
+			<line number="2"  hits="1"  branch="false" />
+			<line number="3"  hits="22"  branch="false" />
+			<line number="4"  hits="22"  branch="false" />
+			<line number="5"  hits="22"  branch="false" />
+			<line number="6"  hits="22"  branch="false" />
+			<line number="7"  hits="22"  branch="false" />
+			<line number="10"  hits="26"  branch="true"  condition-coverage="100% (2/2)" />
+			<line number="11"  hits="2"  branch="false" />
+			<line number="12"  hits="24"  branch="true"  condition-coverage="100% (2/2)" />
+			<line number="13"  hits="2"  branch="false" />
+			<line number="15"  hits="22"  branch="false" />
+			<line number="20"  hits="22"  branch="false" />
+			<line number="23"  hits="27"  branch="true"  condition-coverage="100% (2/2)" />
+			<line number="24"  hits="2"  branch="false" />
+			<line number="25"  hits="25"  branch="true"  condition-coverage="100% (2/2)" />
+			<line number="26"  hits="2"  branch="false" />
+			<line number="28"  hits="23"  branch="false" />
+			<line number="33"  hits="22"  branch="false" />
+			<line number="36"  hits="31"  branch="true"  condition-coverage="100% (2/2)" />
+			<line number="37"  hits="2"  branch="false" />
+			<line number="38"  hits="29"  branch="true"  condition-coverage="100% (2/2)" />
+			<line number="39"  hits="2"  branch="false" />
+			<line number="41"  hits="27"  branch="false" />
+			<line number="47"  hits="1"  branch="false" />
+		</lines>
+		</class>
+	</classes>
+	</package>
+</packages>
+</coverage>
